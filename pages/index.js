@@ -5,9 +5,10 @@ export default function Home() {
   return (
     <div className="center">
       <Head>
-        <title>Web Application Development Final Exam</title>
+        <title>Web Application Development</title>
       </Head>
-      <h1>CHUNGJIAN XIA</h1>
+      <h1>Web Application Development Final Exam</h1>
+      <h3>CHUANGJIAN XIA</h3>
       <Link href="/suppliers">Click to access</Link>
     </div>
   );
