@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import axios from 'axios';
 
 export default function Home({ suppliers }) {
 
@@ -137,8 +138,8 @@ export default function Home({ suppliers }) {
   )
 }
 export async function getServerSideProps() {
-    const res = await fetch(`https://web-final-6328003.vercel.app/api/suppliers/information/`)
-    const suppliers = await res.json()
-    const sortedSuppliers = suppliers.sort((a, b) => a.supplier_name.localeCompare(b.supplier_name))
-    return { props: { suppliers: sortedSuppliers } }
+    const res = await axios.get(`https://web-final-6328003.vercel.app/api/suppliers/information/`);
+    const suppliers = res.data;
+    const sortedSuppliers = suppliers.sort((a, b) => a.supplier_name.localeCompare(b.supplier_name));
+    return { props: { suppliers: sortedSuppliers } };
   }

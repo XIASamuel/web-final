@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import axios from 'axios';
 
 // Step 2: This component is rendered from the server (Server-Side Rendering) SSR
 export default function Supplier({ supplier }) {
@@ -54,9 +55,9 @@ export default function Supplier({ supplier }) {
 
 // STEP 1: This function will be executed at the server before loading the page.
 export async function getServerSideProps({ params }) {
-  console.debug('params', params)
-  const res = await fetch(`https://web-final-6328003.vercel.app/api/suppliers/information/${params.id}`)
-  const supplier = await res.json()
-  console.debug('supplier 1', supplier)
-  return { props: { supplier } }
-}
+    console.debug('params', params);
+    const response = await axios.get(`https://web-final-6328003.vercel.app/api/suppliers/information/${params.id}`);
+    const supplier = response.data;
+    console.debug('supplier 1', supplier);
+    return { props: { supplier } };
+  }

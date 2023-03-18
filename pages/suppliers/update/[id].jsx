@@ -4,7 +4,7 @@ It populates the supplier data into the form.
 */
 import Head from "next/head"
 import Link from "next/link"
-
+import axios from 'axios';
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -128,9 +128,9 @@ export default function Supplier({ supplier }) {
 
 // STEP 1: This function will be executed at the server before loading the page.
 export async function getServerSideProps({ params }) {
-  console.debug('params', params)
-  const res = await fetch(`https://web-final-6328003.vercel.app/api/suppliers/information/${params.id}`)
-  const supplier = await res.json()
-  console.debug('supplier 1', supplier)
-  return { props: { supplier } }
-}
+    console.debug('params', params)
+    const res = await axios.get(`https://web-final-6328003.vercel.app/api/suppliers/information/${params.id}`)
+    const supplier = res.data
+    console.debug('supplier 1', supplier)
+    return { props: { supplier } }
+  }
