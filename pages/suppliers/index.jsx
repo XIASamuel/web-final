@@ -20,78 +20,78 @@ export default function Home({ suppliers }) {
   return (
     <>
         <style jsx global>{`
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: center; 
-    height: 100vh;
+            body {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start; 
+              align-items: center; 
+              height: 100vh;
 
-  }
-  
-  h1 {
-    color: #c72c41;
-  }
+            }
+            
+            h1 {
+              color: #c72c41;
+            }
 
-  table {
-    border-collapse: collapse;
-    margin-top: 2rem;
-  }
+            table {
+              border-collapse: collapse;
+              margin-top: 2rem;
+            }
 
-  th {
-    text-align: center;
-    background-color: #f6e9e9;
-    padding: 0.8rem;
-  }
+            th {
+              text-align: center;
+              background-color: #f6e9e9;
+              padding: 0.8rem;
+            }
 
-  td {
-    padding: 0.8rem;
-    border-bottom: 1px solid #e2d8d8;
-  }
+            td {
+              padding: 0.8rem;
+              border-bottom: 1px solid #e2d8d8;
+            }
 
-  tr:hover {
-    background-color: #fee8e8;
-  }
+            tr:hover {
+              background-color: #fee8e8;
+            }
 
-  a {
-    color: #c72c41;
-  }
+            a {
+              color: #c72c41;
+            }
 
-  button {
-    background-color: #c72c41;
-    color: #fff;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+            button {
+              background-color: #c72c41;
+              color: #fff;
+              border: none;
+              padding: 0.5rem;
+              border-radius: 3px;
+              cursor: pointer;
+            }
 
-  button:hover {
-    background-color: #a32438;
-  }
+            button:hover {
+              background-color: #a32438;
+            }
 
-  input[type='text'], select {
-    padding: 0.5rem;
-    border-radius: 3px;
-    border: 1px solid #d6d6d6;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+            input[type='text'], select {
+              padding: 0.5rem;
+              border-radius: 3px;
+              border: 1px solid #d6d6d6;
+              width: 100%;
+              margin-bottom: 1rem;
+            }
 
-  input[type='submit'] {
-    background-color: #c72c41;
-    color: #fff;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+            input[type='submit'] {
+              background-color: #c72c41;
+              color: #fff;
+              border: none;
+              padding: 0.5rem;
+              border-radius: 3px;
+              cursor: pointer;
+            }
 
-  input[type='submit']:hover {
-    background-color: #a32438;
-  }
-`}
-</style>
+            input[type='submit']:hover {
+              background-color: #a32438;
+            }
+          `}
+        </style>
       <Head>
         <title>Suppliers</title>
       </Head>

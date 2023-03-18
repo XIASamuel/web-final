@@ -36,52 +36,51 @@ export default function AddSupplierPage() {
     return (
         <div>
             <style jsx global>{`
-  
-  body {
-    background-color: #FFF6F6;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #444444;
-    width: 80%;
-    margin: 0 auto;
-  }
+              body {
+                background-color: #FFF6F6;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #444444;
+                width: 80%;
+                margin: 0 auto;
+              }
 
-  h1 {
-    font-size: 2rem;
-    color: #c72c41;
-  }
+              h1 {
+                font-size: 2rem;
+                color: #c72c41;
+              }
 
-  label {
-    display: block;
-    margin-top: 1rem;
-    color: #c72c41;
-  }
+              label {
+                display: block;
+                margin-top: 1rem;
+                color: #c72c41;
+              }
 
-  input[type="text"],
-  input[type="tel"],
-  input[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 2px solid #FF4500;
-    border-radius: 4px;
-    background-color: #FFE5E5;
-    color: #444444;
-  }
+              input[type="text"],
+              input[type="tel"],
+              input[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 0.5rem;
+                margin-top: 0.5rem;
+                border: 2px solid #FF4500;
+                border-radius: 4px;
+                background-color: #FFE5E5;
+                color: #444444;
+              }
 
-  input[type="submit"] {
-    background-color: #c72c41;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
+              input[type="submit"] {
+                background-color: #c72c41;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 2rem;
+              }
 
-  input[type="submit"]:hover {
-    background-color: #FF6347;
-  }
-  `}
-</style>
+              input[type="submit"]:hover {
+                background-color: #FF6347;
+              }
+              `}
+            </style>
 
             <form onSubmit={handleSubmit(saveSupplier)}>
                 <h1>New Supplier</h1>
