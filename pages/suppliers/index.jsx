@@ -97,7 +97,7 @@ export default function Home({ suppliers }) {
       </Head>
       <h1>Suppliers</h1>
       <p style={{ margin: '0.4rem' }}>
-        <Link href="/suppliers/add">+New Supplier</Link>
+        <button><Link href="/suppliers/add" style={{color: '#FFF'}}>+New Supplier</Link></button>
       </p>
       <table>
         <thead>
@@ -122,7 +122,7 @@ export default function Home({ suppliers }) {
                   <td style={{textAlign:'center'}}>{supplier.phone_number}</td>
                   <td>
                       <>
-                        <Link href={`/suppliers/update/${supplier._id}`}>Update</Link>
+                        <button><Link href={`/suppliers/update/${supplier._id}`} style={{color: '#FFF'}}>Update</Link></button>
                         &nbsp;&nbsp;&nbsp;
                         <button onClick={() => deleteSupplier(supplier._id)}>Delete</button>
                       </>

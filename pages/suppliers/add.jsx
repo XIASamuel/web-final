@@ -67,6 +67,21 @@ export default function AddSupplierPage() {
                 background-color: #FFE5E5;
                 color: #444444;
               }
+              
+              button {
+
+                background-color: #c72c41;
+                color: #fff;
+                border: none;
+                padding: 0.5rem;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-Top: 10px;
+              }
+  
+              button:hover {
+                background-color: #a32438;
+              }
 
               input[type="submit"] {
                 background-color: #c72c41;
@@ -77,7 +92,7 @@ export default function AddSupplierPage() {
               }
 
               input[type="submit"]:hover {
-                background-color: #FF6347;
+                background-color: #a32438;
               }
               `}
             </style>
@@ -94,7 +109,7 @@ export default function AddSupplierPage() {
                 <input id="phone_number" {...register("phone_number", { required: true })} placeholder="Phone Number" /><br />
                 <input type="submit" />
             </form>
-            <Link href="/suppliers">Back</Link>
+            <button><Link href="/suppliers" style={{color: '#FFF'}}>Back</Link></button>
         </div>
 
     );

@@ -88,6 +88,21 @@ export default function Supplier({ supplier }) {
           color: #444444;
         }
 
+        button {
+          background-color: #c72c41;
+          color: #fff;
+          border: none;
+          padding: 0.5rem;
+          border-radius: 3px;
+          cursor: pointer;
+          margin-Left: 15px;
+      
+        }
+
+        button:hover {
+          background-color: #a32438;
+        }
+
         input[type="submit"] {
           background-color: #c72c41;
           color: white;
@@ -97,7 +112,7 @@ export default function Supplier({ supplier }) {
         }
 
         input[type="submit"]:hover {
-          background-color: #FF6347;
+          background-color: #a32438;
         }
       `}
       </style>
@@ -120,7 +135,7 @@ export default function Supplier({ supplier }) {
         </form>
       </div>
 
-      <Link href="/suppliers">Back</Link>
+      <button><Link href="/suppliers" style={{color: '#FFF'}}>Back</Link></button>
     </>
   )
 }
